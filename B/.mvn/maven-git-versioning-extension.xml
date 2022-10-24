@@ -1,0 +1,41 @@
+<configuration xmlns="https://github.com/qoomon/maven-git-versioning-extension"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="https://github.com/qoomon/maven-git-versioning-extension https://qoomon.github.io/maven-git-versioning-extension/configuration-9.1.0.xsd">
+
+  <!--
+  -  NOTE: the evaluated version can be tested locally with the following command.
+  -    mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+  -->
+  <refs>
+    <ref type="branch">
+      <pattern>master</pattern>
+      <version>${version}</version>
+    </ref>
+    <ref type="branch">
+      <pattern><![CDATA[bugfix/([A-Z]+-[0-9]+).*]]></pattern>
+      <version>${ref.1}-bugfix-SNAPSHOT</version>
+    </ref>
+    <ref type="branch">
+      <pattern><![CDATA[feature/([A-Z]+-[0-9]+).*]]></pattern>
+      <version>${ref.1}-feature-SNAPSHOT</version>
+    </ref>
+    <ref type="branch">
+      <pattern><![CDATA[hotfix/([A-Z]+-[0-9]+).*]]></pattern>
+      <version>${ref.1}-hotfix-SNAPSHOT</version>
+    </ref>
+    <ref type="branch">
+      <pattern>release/.+</pattern>
+      <version>${version}</version>
+    </ref>
+    <ref type="tag">
+      <pattern><![CDATA[(?<version>.*)]]></pattern>
+      <version>${ref.version}</version>
+    </ref>
+  </refs>
+
+  <!-- optional fallback configuration in case of no matching ref configuration-->
+  <rev>
+    <version>${commit}</version>
+  </rev>
+
+</configuration>
