@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>jwt007.intellij.tickets.idea-304403</groupId>
+    <artifactId>A</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../../../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>A-version1</artifactId>
+  <packaging>pom</packaging>
+
+  <name>IDEA-304403 - A- version1</name>
+
+  <properties>
+    <version.apache.commons.commons-lang3>3.10</version.apache.commons.commons-lang3>
+  </properties>
+
+  <modules>
+    <module>core-jar-1</module>
+  </modules>
+
+</project>

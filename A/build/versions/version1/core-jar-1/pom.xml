@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>jwt007.intellij.tickets.idea-304403</groupId>
+    <artifactId>A-version1</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>core-jar-version1</artifactId>
+  <packaging>jar</packaging>
+
+  <name>IDEA-304403 - A - version1 - core-jar-version1</name>
+
+  <properties>
+    <A.core-jar.basedir>../../../../core-jar</A.core-jar.basedir>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>${A.core-jar.basedir}/src/main/java</sourceDirectory>
+  </build>
+
+</project>
