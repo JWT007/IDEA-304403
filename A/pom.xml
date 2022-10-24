@@ -83,4 +83,10 @@
     </pluginManagement>
   </build>
 
+  <scm>
+    <connection>scm:git:https://github.com/JWT007/IDEA-304403.git</connection>
+    <developerConnection>scm:git:https://github.com/JWT007/IDEA-304403.git</developerConnection>
+    <url>https://github.com/JWT007/IDEA-304403.git/</url>
+  </scm>
+
 </project>
