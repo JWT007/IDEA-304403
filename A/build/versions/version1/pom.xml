@@ -12,7 +12,7 @@
   <artifactId>A-version1</artifactId>
   <packaging>pom</packaging>
 
-  <name>IDEA-304403 - A- version1</name>
+  <name>IDEA-304403 - A - version1</name>
 
   <properties>
     <version.apache.commons.commons-lang3>3.10</version.apache.commons.commons-lang3>

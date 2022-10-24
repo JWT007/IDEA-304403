@@ -11,7 +11,7 @@
   <artifactId>core-jar</artifactId>
   <packaging>jar</packaging>
 
-  <name>IDEA-304403 - A- core-jar</name>
+  <name>IDEA-304403 - A - core-jar</name>
 
   <dependencies>
     <dependency>
